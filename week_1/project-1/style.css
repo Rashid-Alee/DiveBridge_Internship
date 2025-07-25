@@ -73,6 +73,15 @@ body {
   background-color: var(--header-footer-color);
   padding: var(--spacing-medium) var(--spacing-large);
   border-radius: var(--border-radius);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  
+  /* Background blur effect (modern browsers) */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  transition: background-color 0.3s ease;
 }
 .logo {
   font-size: 1.5rem;
