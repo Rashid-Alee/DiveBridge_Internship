@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Grid</title>
+
+    <style>
+
+        .container{
+
+            display: grid;
+            /* grid-template-columns: 150px 150px 150px;
+            grid-template-rows: 100px 100px; */
+
+            /* gap: 10px; */
+
+            grid-template-columns: 1fr 1fr 1fr;
+            row-gap: 25px;
+            column-gap: 15px;
+        }
+
+        .item{
+
+            background-color: blueviolet;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+        }
+        .item {
+            grid-column: 2 / 3; /* Spans first two columns */
+            background-color: lightblue;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+    
+
+    <div class="container">
+
+    <div class="item">1</div> 
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+
+    </div>
+</body>
+</html>
