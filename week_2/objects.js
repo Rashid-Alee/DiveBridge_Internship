@@ -1,15 +1,12 @@
-// let myContact = {
-//   name: "Rashid",
-//   email: "Rashid@example.com",
-//   phone: "123-456-7890",
-//   role: "Intern"
-// };
+let myContact = {
+  name: "Rashid",
+  email: "Rashid@example.com",
+  phone: "123-456-7890",
+  role: "Intern"
+};
 
-// console.log( `name: ${ myContact.name}`);
-// console.log(`Email: ${myContact.email}`);
-
-
-
+console.log( `name: ${ myContact.name}`);
+console.log(`Email: ${myContact.email}`);
 
 
 
@@ -41,11 +38,4 @@ contacts.forEach(function(person){
     console.log(`Role: ${person.role}`);
 
     console.log("");
-
-
-
-
-
- 
-
 })
