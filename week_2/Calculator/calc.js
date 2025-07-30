@@ -18,6 +18,17 @@ function divide(a,b){
     return a/b;
 }
 
+function percentage(num) 
+{
+  num = parseFloat(num);
+
+  if (isNaN(num)) {
+    return "Error: Invalid number";
+  }
+
+  return num / 100;
+}
+
 function calculate(num1, operator, num2) {
   // Convert strings to numbers (in case input is string)
   num1 = parseFloat(num1);
