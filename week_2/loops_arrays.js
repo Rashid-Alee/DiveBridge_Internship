@@ -33,4 +33,4 @@ printList(shoppingList, "Shopping List");
 
 printList(books, "Books to read");
 
-printList(movies, "Favorite Movies");
+printList(movies, "sFavorite Movies");

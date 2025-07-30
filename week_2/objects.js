@@ -5,8 +5,24 @@ let myContact = {
   role: "Intern"
 };
 
-console.log( `name: ${ myContact.name}`);
+myContact.name = "Rashid ALi";
+
+myContact.city = "kashmore";
+
+delete myContact.role;
+
+
+
+console.log(`name: ${myContact.name}`);
 console.log(`Email: ${myContact.email}`);
+console.log("city:" + myContact.city);
+
+
+
+
+// can access properties with this
+// console.log(myContact['name'])
+
 
 
 
@@ -28,14 +44,26 @@ let contacts = [
   }
 ];
 
+contacts.push({
+  name: "Diana",
+  email: "diana@example.com",
+  role: "DevOps",
+});
+
+// contacts[0].city="kashmore";
+contacts[0]['city'] = "kashmore";
+
 console.log("contact list")
 
-contacts.forEach(function(person){
-    console.log("");
+contacts.forEach(function (person) {
+  console.log("");
 
-    console.log(`${person.name}`);
-    console.log(`Email: ${person.email}`);
-    console.log(`Role: ${person.role}`);
+  console.log(`${person.name}`);
+  console.log(`Email: ${person.email}`);
+  console.log(`Role: ${person.role}`);
+  person.city = "kashmore";
+  console.log("city:" + person.city);
 
-    console.log("");
+
+  console.log("");
 })
