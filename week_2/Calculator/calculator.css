@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Segoe UI';
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.calculator {
+    background: #6b7bff;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 400px;
+}
+
+.display {
+    background: #6b7bff;
+    color: white;
+    padding: 30px 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.result {
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.btn {
+    height: 60px;
+    border: none;
+    border-radius: 12px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 400;
+}
+
+.btn:hover {
+    transform: scale(0.95);
+    opacity: 0.8;
+}
+
+.btn:active {
+    transform: scale(0.9);
+}
+
+/* Number buttons */
+.btn.number {
+    background: white;
+    color: #333;
+}
+
+/* Operator buttons */
+.btn.operator {
+    background: #5a6bff;
+    color: white;
+}
+
+/* Special buttons (AC, +/-, %) */
+.btn.special {
+    background: #8a9aff;
+    color: white;
+}
+
+/* Zero button spans 2 columns */
+.btn.zero {
+    grid-column: span 2;
+}
+
+/* Equals button styling */
+.btn.equals {
+    background: #4a5bff;
+}
